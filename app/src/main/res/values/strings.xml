@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">ProgrammingQuotesApp</string>
+    <!--<string name="content_Authority">com.example.mohammed.programmingquotesapp</string>-->
+    <!-- SyncAdapter related -->
+    <string name="sync_account_type">ProgrammingQuotesApp.example.com</string>
+    <string name="content_authority">com.example.mohammed.programmingquotesapp</string>
+    <string name="empty_quote_list">No Quotes Found</string>
+    <string name="settings">action_settings</string>
+    <string name="action_about_me">About me...</string>
+
+
+    <string name="network_state_key">internet_access</string>
+    <bool name="network_state_default">false</bool>
+    <string name="internet_access">internet_access</string>
+    <bool name="internet_access_default">false</bool>
+    <string name="no_internet_access">No Network Available</string>
+
+    <string name="server_found">server_found</string>
+    <bool name="server_found_default">false</bool>
+    <string name="server_not_found">Server Not Found</string>
+    <string name="author_hint">author</string>
+    <string name="quote_hint">quote</string>
+    <string name="peralink_hint">peralink</string>
+    <string name="photo_hint">photo id</string>
+
+    <!--settings -->
+    <string name="notification_pref_title">Receiving Notifications</string>
+    <string name="notification_pref_key">notification</string>
+    <string name="category_pref_title">Quotes Prefered</string>
+    <string name="category_pref_key">quotes state</string>
+    <string name="popular_pref_summery">popular choosed</string>
+    <string name="popular_pref_key">quote state</string>
+    <string name="popular_pref_default">quotes</string>
+    <string name="popular_pref_title">Popular</string>
+    <string name="general_pref_title">General</string>
+    <string name="general_pref_summery">General</string>
+    <string name="settings_activity_label">Settings</string>
+    <string name="menu_item_share">Share</string>
+    <string name="menu_item_open_in_brouser">Open in brouser</string>
+    <string name="about_me_lable">About Me</string>
+    <string name="transition_app_name">app_name_transition</string>
+    <string name="url_qoute_random">http://quotes.stormconsultancy.co.uk/random.json</string>
+    <string name="url_qoutes">http://quotes.stormconsultancy.co.uk/quotes.json</string>
+    <string name="widget_views_description">widget views</string>
+    <dimen name="widget_default_width">110dp</dimen>
+    <dimen name="widget_default_height">40dp</dimen>
+    <dimen name="widget_min_resize_width">40dp</dimen>
+    <dimen name="widget_min_resize_height">@dimen/widget_default_height</dimen>
+    <dimen name="widget_large_width">220dp</dimen>
+    <string name="banner_home_footer">ca-app-pub-0664570763252260/3326522424</string>
+    <string name="interstitial_full_screen">ca-app-pub-0664570763252260/1769900428</string>
+
+    <string name="pref_enable_notifications_key" translatable="false">enable_notifications</string>
+    <string name="pref_enable_notifications_label">Weather Notifications</string>
+
+    <string name="pref_enable_notifications_true">Enabled</string>
+    <string name="pref_enable_notifications_false">Not Enabled</string>
+    <string name="pref_enable_notifications_default" translatable="false">true</string>
+    <string name="position">position</string>
+    <string name="icon_transition_name">icon transition</string>
+    <string name="notifiction_hint_error">NotificationData</string>
+    <string name="notification_title">Quote App</string>
+    <string name="not_connnected_network">Not online, not refreshing.</string>
+    <string name="settings_lable">Settings</string>
+    <string name="loader_reset">RESET LOADER</string>
+    <string name="error_get_json_string">Error Can not get JSONString</string>
+    <string name="error_transform_json">Error Can not transform for JSONOBJECT</string>
+    <string name="quote_is_null">Quote is null</string>
+    <!--<string name="gcm_defaultSenderId">498205152047</string>-->
+
+</resources>

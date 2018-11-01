@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "498205152047",
+    "firebase_url": "https://programmingquoteapp.firebaseio.com",
+    "project_id": "programmingquoteapp",
+    "storage_bucket": "programmingquoteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498205152047:android:d64eb44003fe2e50",
+        "android_client_info": {
+          "package_name": "com.example.mohammed.programmingquotesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498205152047-1qfj3kpam9b0hgodu59h8r7iqsu26em0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mohammed.programmingquotesapp",
+            "certificate_hash": "798834f22016de426f891d0c75c744e8e4316d7a"
+          }
+        },
+        {
+          "client_id": "498205152047-3efpku7kl37s9o4b7mla82r1nnfvoltm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeYZxIwRoC_czbXssW9nfVD0DFgzQRh4c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498205152047-3efpku7kl37s9o4b7mla82r1nnfvoltm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

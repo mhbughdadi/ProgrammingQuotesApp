@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="android:windowExitTransition">@transition/slide_exit</item>
+
+
+    </style>
+    <style name="AppTheme.Home">
+      <!--  <item name="android:windowExitTransition">@android:transition/slide_right</item>
+        <item name="android:windowReenterTransition">@android:transition/slide_left</item>
+-->
+    </style>
+    <style name="quote_style">
+        <item name="android:fontFamily">sans-serif_light</item>
+        <item name="android:textStyle">bold|italic</item>
+
+
+    </style>
+</resources>

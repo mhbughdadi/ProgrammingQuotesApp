@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_container_padding">16dp</dimen>
+    <dimen name="padding_list_item">2dp</dimen>
+    <dimen name="app_bar_ovarlapping">20dp</dimen>
+    <dimen name="card_view_margin_top">8dp</dimen>
+    <dimen name="mardin_devider">4dp</dimen>
+    <dimen name="app_bar_elevation">4dp</dimen>
+    <dimen name="text_size_title_material_toolbar">20dp</dimen>
+    <dimen name="text_size_title_material">20sp</dimen>
+    <dimen name="iv_quote_fragment_detail">100dp</dimen>
+
+</resources>

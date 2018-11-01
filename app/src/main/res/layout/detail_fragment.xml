@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    android:background="@android:color/white"
+    android:layout_centerVertical="true"
+    android:elevation="@dimen/cardview_default_elevation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/fragment_container_padding"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/iv_quote_fragment_detail"
+                android:layout_height="@dimen/iv_quote_fragment_detail"
+                android:background="@drawable/avatar"
+                android:src="@drawable/ic_quote"
+                android:id="@+id/detail_fragment_photo"
+                android:layout_margin="@dimen/fragment_container_padding"
+                android:layout_gravity="center"
+                android:transitionName="@string/icon_transition_name"/>
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:id="@+id/detail_fragment_author"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="24sp"
+                    android:text="author"
+                    />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/divider"
+                    android:layout_marginLeft="0dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/detail_fragment_author"
+                    android:layout_marginRight="0dp"
+                    app:layout_constraintRight_toRightOf="@+id/detail_fragment_author"
+                    android:layout_marginTop="@dimen/mardin_devider"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_fragment_author" />
+            </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:id="@+id/detail_fragment_peralink"
+                android:text="http://www.facebook.com"
+                android:layout_marginTop="@dimen/mardin_devider"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardview_default_elevation"
+                android:background="@color/divider"
+                android:layout_marginTop="@dimen/mardin_devider"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/detail_fragment_quote"
+                android:layout_marginTop="@dimen/fragment_container_padding"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="@style/quote_style"
+                android:text="I taque allah"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

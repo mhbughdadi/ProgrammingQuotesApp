@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:divider="?android:attr/dividerHorizontal"
+    tools:context="com.example.android.sunshine.app.MainActivity"
+    android:background="@color/default_background">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:fitsSystemWindows="true"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="?colorPrimary"
+            android:id="@+id/main_layout_collapsing_app_bar"
+            android:elevation="4dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            app:expandedTitleMarginStart="80dp">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:navigationIcon="@mipmap/ic_launcher"
+                android:background="?colorPrimary"
+                app:contentInsetStart="80dp"
+                app:layout_collapseMode="pin"
+
+                android:id="@+id/tool_bar"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:baselineAligned="false"
+        android:divider="?android:attr/dividerHorizontal"
+        android:elevation="@dimen/app_bar_elevation"
+        android:background="@color/default_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.android.sunshine.app.MainActivity">
+
+    <!--
+    This layout is a two-pane layout for the Items master/detail flow.
+    -->
+
+
+    
+    <android.support.v4.widget.Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/layoutCenter"
+
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@id/layoutCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/layoutCenter"
+        >
+
+        <FrameLayout
+            android:id="@+id/list_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/default_background"
+            android:padding="@dimen/fragment_container_padding"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </FrameLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner_home_footer">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/details_card_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingEnd="@dimen/abc_list_item_padding_horizontal_material"
+        android:paddingStart="@dimen/abc_list_item_padding_horizontal_material"
+        app:cardPreventCornerOverlap="false"
+        android:foregroundGravity="center_vertical"
+        app:cardElevation="4dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layoutCenter"
+        android:layout_toEndOf="@+id/layoutCenter"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignLeft="@id/layoutCenter"
+        android:layout_marginRight="24dp"/>
+
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
